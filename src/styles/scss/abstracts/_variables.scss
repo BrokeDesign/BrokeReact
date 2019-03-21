@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Constants map
+/// @type Map
+
+$CONSTANTS: () !global;
+
+//Color
+$color-types: (
+  	alpha : hsl(198, 100%, 13%),
+  	beta  : hsl(197, 40%, 39%),
+  	gamma	: hsl(165, 95%, 48%),
+  	psi  	: hsl(5, 88%, 61%),
+	omega	: hsl(350, 78%, 42%),
+) !default;
+
+// Grid column base count
+// TODO: should columns be here or in the grid component??
+
+// ! Removing columns variable causes compile failure, unknown reason 
+$columns: 12;
+
+//Font families
+$font-stacks: (
+  // Sans-serif
+  
+  'Amiko': (
+    family: ('Amiko', 'Work Sans', Helvetica Neue, Helvetica, Arial, sans-serif),  
+    styles: ( normal, italic ),
+    weights: ( 200, 400, 700 )
+  ),
+  'Work Sans': (
+    family: ('Work Sans', 'Amiko', Helvetica Neue, Helvetica, Arial, sans-serif),
+    styles: ( normal, italic ),
+    weights: ( 200, 400, 700 )
+  ),
+  /// Serif font family
+  'Lora': (
+    family: ('Lora', Georgia, Times, Times New Roman, serif),
+    styles: ( normal, italic ),
+    weights: ( 200, 400, 700 )
+  ),
+
+  /// Code font stack
+  'Code': (
+    family: ('Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace),
+    styles: ( normal, italic ),
+    weights: ( 200, 400, 700 )
+  )
+);
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

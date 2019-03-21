@@ -1,0 +1,61 @@
+{
+  "name": "@brokeds/broke-react",
+  "version": "0.1.0",
+  "description": "BrokeDS React Component Library",
+  "main": "dist/brokeReact.js",
+  "scripts": {
+    "compile:sass": "node-sass src/styles/scss/styles.scss src/styles/css/styles.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "start": "concurrently --kill-others \"npm run watch:sass\" \"npm run dev\"",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrokeDesign/BrokeReact.git"
+  },
+  "keywords": [
+    "brokeds",
+    "react",
+    "components",
+    "design",
+    "front-end",
+    "reactjs"
+  ],
+  "author": "Christian Gorke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrokeDesign/BrokeReact/issues"
+  },
+  "homepage": "https://github.com/BrokeDesign/BrokeReact#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.1",
+    "interpolate-html-plugin": "^3.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}

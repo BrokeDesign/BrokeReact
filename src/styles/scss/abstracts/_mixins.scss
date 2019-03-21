@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Constant setter
+/// @param   {String} $name  - Name of constant to get
+/// @param   {*}      $value - Constant value
+/// @return  {*}             - Constant value
+/// @require $CONSTANTS
+/// @throw   'Constant `#{$name}` already defined.'
+/// @output  Nothing
+
+@mixin const($name, $value) {
+    @if map-has-key($CONSTANTS, $name) {
+        @error 'Constant `#{$name}` already defined.';
+    }
+
+    $CONSTANTS: map-merge(
+        $CONSTANTS,
+        (
+            $name: $value
+        )
+    ) !global;
+}
+
+/// Breakpoints
+/// Usage (anywhere in scss file):
+// ----------------------------------------
+// @include breakpoint(breakpointname) {
+//   <styles>
+// }
+//-----------------------------------------
+
+
+@mixin breakpoint($point) {
+    @if $point == xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $point == lg {
+        @media (min-width: 1080px) {
+            @content;
+        }
+    } @else if $point == md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $point == sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $point == xs {
+        @media (min-width: 480px) {
+            @content;
+        }
+    } @else if $point == xs-m {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}

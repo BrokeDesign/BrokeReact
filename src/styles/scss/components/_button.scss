@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+%button {
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.15em;
+    border: 1px solid;
+}
+
+@mixin button($color) {
+    @extend %button;
+    color: contrast($color);
+    background: lighten($color, 38%);
+    border-color: lighten($color, 20%);
+}
+
+@each $type, $color in $color-types {
+    .button-#{$type} {
+        @include button($color);
+    }
+}
