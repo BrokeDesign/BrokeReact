@@ -16,7 +16,7 @@ module.exports = {
 		filename: 'index.js',
 		library: libraryName,
 		libraryTarget: 'umd',
-		publicPath: '/dist/',
+		publicPath: '/',
 		umdNamedDefine: true,
 	},
 	module: {
@@ -34,7 +34,7 @@ module.exports = {
 				test: /\.s?(a|c)ss$/,
 				exclude: /node_modules/,
 				use: [
-					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+					MiniCssExtractPlugin.loader,
 					'css-loader',
 					'sass-loader',
 				],
@@ -73,14 +73,12 @@ module.exports = {
 		// The public URL is available as %PUBLIC_URL% in index.html, e.g.:
 		// <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 		// In development, this will be an empty string.
-		devMode
-			? new InterpolateHtmlPlugin({
-					PUBLIC_URL: '',
-			  })
-			: console.log('Success: Skipping InterpolateHtmlPlugin for production'),
+		new InterpolateHtmlPlugin({
+			PUBLIC_URL: '',
+		}),
 		new MiniCssExtractPlugin({
-			filename: devMode ? '[name].css' : '[name].[hash].css',
-			chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+			filename: '[name].css',
+			chunkFilename: '[id].css'
 		}),
 	],
 	resolve: {

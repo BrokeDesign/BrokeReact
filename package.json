@@ -2,7 +2,7 @@
   "name": "@brokeds/broke-react",
   "version": "0.1.13",
   "description": "BrokeDS React Component Library",
-  "main": "dist/brokeReact.js",
+  "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -11,8 +11,12 @@
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
     "dev": "webpack-dev-server --mode development --open --hot",
     "start": "concurrently --kill-others \"npm run watch:sass\" \"npm run dev\"",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline --copy-files",
     "build": "webpack --mode production"
   },
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrokeDesign/BrokeReact.git"
@@ -50,6 +54,9 @@
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "sass-loader": "^7.1.0",
@@ -58,9 +65,7 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
-    "webpack-node-externals": "^1.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "webpack-node-externals": "^1.7.2"
   },
   "peerDependencies": {
     "react": "^16.8.3",
