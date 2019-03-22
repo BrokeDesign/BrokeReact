@@ -1,6 +1,6 @@
 {
   "name": "@brokeds/broke-react",
-  "version": "0.1.8",
+  "version": "0.1.7",
   "description": "BrokeDS React Component Library",
   "main": "dist/brokeReact.js",
   "scripts": {
@@ -55,10 +55,12 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
