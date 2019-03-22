@@ -3,6 +3,9 @@
   "version": "0.1.10",
   "description": "BrokeDS React Component Library",
   "main": "dist/brokeReact.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "compile:sass": "node-sass src/styles/scss/styles.scss src/styles/css/styles.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
