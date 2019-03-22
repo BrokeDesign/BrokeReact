@@ -13,7 +13,7 @@ module.exports = {
         path: path.join(__dirname, '/dist'),
         filename: 'brokeReact.js',
         publicPath: '/',
-        libraryTarget: 'umd',
+        libraryTarget: 'commonjs',
     },
     module: {
         rules: [
