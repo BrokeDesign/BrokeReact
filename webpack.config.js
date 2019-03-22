@@ -13,7 +13,7 @@ module.exports = {
 	entry: ['./src/index.js', './src/styles/scss/styles.scss'],
 	output: {
 		path: path.join(__dirname, '/dist'),
-		filename: 'brokeReact.js',
+		filename: 'index.js',
 		library: libraryName,
 		libraryTarget: 'umd',
 		publicPath: '/dist/',
