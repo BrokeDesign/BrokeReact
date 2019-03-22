@@ -1,6 +1,6 @@
 {
   "name": "@brokeds/broke-react",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "BrokeDS React Component Library",
   "main": "dist/brokeReact.js",
   "publishConfig": {
