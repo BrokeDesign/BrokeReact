@@ -21,7 +21,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/SkothaSec/BrokeDS/tree/master/BrokeEverything">
+  <a href="https://brokeds.netlify.com">
     <img src="src/assets/images/logo.svg" alt="Logo">
   </a>
 
@@ -134,15 +134,38 @@ Using CSS in react app:
 
 **Import package in entry file**
 
-`src/index.js`
 ```js
-Package testing needs work first to test 
+import { <Component Name> } from '@brokeds/broke-react' 
+```
+
+example:
+```js
+import React from 'react';
+import {Card, CardContent, CardHead, CardFoot } from '@brokeds/broke-react';
+
+const ExampleComponent = () => {
+  return(
+    <Card>
+      <CardHead>
+        <h2>Card Header</h2>
+      </CardHead>
+      <CardContent>
+      Here is content
+      </CardContent>
+      <CardFooter>
+        <p>Card Footer</p>
+      </CardFooter>
+    </Card>
+  );
+}
+
+export default ExampleComponent;
+
 ```
 
 
 
-
-`placeholder` _For more examples, please refer to the [Documentation](https://brokeds.netlify.com/)_
+_For more examples, please refer to the [Documentation](https://brokeds.netlify.com/)_
 
 
 

@@ -13,8 +13,13 @@ module.exports = {
 	entry: ['./src/index.js', './src/styles/scss/styles.scss'],
 	output: {
 		path: path.join(__dirname, '/dist'),
+		// bundle to indexjs
 		filename: 'index.js',
+
+		//library name comes from package.json
 		library: libraryName,
+
+		// Universal module
 		libraryTarget: 'umd',
 		publicPath: '/',
 		umdNamedDefine: true,
@@ -57,6 +62,7 @@ module.exports = {
 		],
 	},
 	devServer: {
+		// Development server watches public and src for changes and HMR
 		contentBase: ['./public', './src'],
 		watchContentBase: true,
 		inline: true,
@@ -77,10 +83,12 @@ module.exports = {
 			PUBLIC_URL: '',
 		}),
 		new MiniCssExtractPlugin({
+			//minify scss to styles.css
 			filename: '[name].css',
 			chunkFilename: '[id].css'
 		}),
 	],
+	//React and react dom must be externals to act as components
 	resolve: {
 		alias: {
 			react: path.resolve(__dirname, './node_modules/react'),
