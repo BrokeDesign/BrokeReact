@@ -1,3 +1,5 @@
+import "./styles/scss/styles.scss"
+
 // Card Components
 export { default as Card } from "./lib/card/Card";
 export { default as CardContent } from "./lib/card/CardContent";
