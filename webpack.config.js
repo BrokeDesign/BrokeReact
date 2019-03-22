@@ -2,17 +2,19 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const nodeExternals = require('webpack-node-externals');
+
+const pkg = require('./package.json');
+const path = require('path');
 
 const devMode = process.env.NODE_ENV !== 'production';
-const path = require('path');
+const libraryName= pkg.name;
 
 module.exports = {
 	entry: ['./src/index.js', './src/styles/scss/styles.scss'],
 	output: {
 		path: path.join(__dirname, '/dist'),
 		filename: 'brokeReact.js',
-		library: 'brokeReact',
+		library: libraryName,
 		libraryTarget: 'umd',
 		publicPath: '/dist/',
 		umdNamedDefine: true,
