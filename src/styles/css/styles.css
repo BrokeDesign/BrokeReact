@@ -430,6 +430,13 @@ a {
     color: #222222;
     text-decoration: underline; }
 
+footer, header {
+  min-height: 30px;
+  padding: 1em; }
+
+main {
+  flex: 1; }
+
 section {
   margin: 2rem auto;
   width: calc(100% - 10rem);
@@ -454,22 +461,24 @@ section {
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
+.container, main {
   margin: 1em auto;
   width: calc(100% - 5em);
   max-width: 70em; }
-  .container .container-head {
+  .container .container-head, main .container-head {
     padding: 1em; }
+
+.outline {
+  border: 1px solid black;
+  border-radius: 5px; }
 
 /**
 Item grouping Wrapper
 */
 .wrapper {
   display: flex;
-  flex-flow: row wrap;
-  margin: 2em;
-  width: 70%;
-  height: 90%; }
+  flex-direction: column;
+  height: 100vh; }
 
 /**
  * Hide text while making it readable for screen readers

@@ -33,11 +33,11 @@
     <a href="https://brokeds.netlify.com/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://brokeds.netlify.com/">View Demo `TBD`</a>
+    <a href="https://brokeds.netlify.com/">View Demo</a>
     ·
-    <a href="https://github.com/SkothaSec/BrokeDS/issues">Report Bug</a>
+    <a href="https://github.com/BrokeDesign/BrokeReact/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SkothaSec/BrokeDS/issues">Request Feature</a>
+    <a href="https://github.com/BrokeDesign/BrokeReact/issues">Request Feature</a>
   </p>
 </p>
 
@@ -73,34 +73,28 @@ While there are plenty of css frameworks, design systems, and react component li
 * [React](https://reactjs.org)
 * [Webpack](https://webpackjs.com)
 * [Babel](https://babeljs.com)
-
+* [StoryBook](https://storybook.js.org)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Broken Design System is in it's very earliest stages at them moment so it's important to keep in mind that frequent updates will be the norm. Right now, what is available for use is very limited.
+Broke React is a part of 
 
 ### Installation
-//TODO: This will be added when base features are implemented
-
 **Node Module**
 
-_npm_
+_npm or yarn_
 ```sh
-npm i -D @brokeds/broke-everything
+npm i -D @brokeds/broke-react
 ```
-
-OR
-
-_yarn_
 ```sh
 yarn add -D @brokeds/broke-everything
 ```
 
-Then import the module inside of your entrypoint (eg. `src/index.js`)
+Then import whatever component wherever you want to use it.
 ```js
-import @brokeds/broke-everything
+import {<component name>} @brokeds/broke-react
 ```
 
 
@@ -109,23 +103,32 @@ import @brokeds/broke-everything
 Clone the repo and navigate to the full feature directory
 
 ```sh
-git clone https:://github.com/SkothaSec/BrokeDS.git  && /
-cd ./BrokeDS/BrokeEverything
+git clone https://github.com/BrokeDesign/BrokeReact.git  && /
+cd ./BrokeDS/BrokeReact
 ```
-
 
 Install NPM packages and start the server
 
 ```sh
 npm i && yarn start
 ```
-
-OR
-
 ```sh
 yarn add && yarn start
 ```
 
+Start the dev server
+```sh
+npm start
+```
+```sh
+yarn start
+```
+
+Start the dev server and Storybook instance (https://localhost:6006)
+//! important: The dev server is only included if you decide to make use of it, also webpack watches for changes and hotloads modules.
+```
+npm start 
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -165,7 +168,7 @@ export default ExampleComponent;
 
 
 
-_For more examples, please refer to the [Documentation](https://brokeds.netlify.com/)_
+_For more examples, please refer to the [Documentation](https://brokeds.netlify.com/) or the storybook instance_
 
 
 

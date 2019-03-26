@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Col = props => {
-    return <div className={`col-${props.colSize} ${props.offset}`}>{props.children}</div>;
+    return <div className={`col-${props.colSize} ${props.offset} ${props.outline}`}>{props.children}</div>;
 };
 
 Col.propTypes = {
@@ -20,13 +20,16 @@ Col.propTypes = {
      * Acceptable values:
      *      col-offset-<int>
      */
-    offset: PropTypes.string
+    offset: PropTypes.string,
+
+    outline: PropTypes.oneOf(["", "outline"])
 };
 
 Col.defaultProps = {
     children: "",
     colSize: "12",
-    offset: ""
+    offset: "",
+    outline: ""
 };
 
 export default Col;

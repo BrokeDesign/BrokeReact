@@ -27,16 +27,21 @@
 }
 
 
+.outline {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /**
 Item grouping Wrapper
 */
 .wrapper {
 	display: flex;
-	flex-flow: row wrap;
-	margin: 2em;
-	width: 70%;
-	height: 90%;
+	flex-direction: column;
+	height: 100vh;
 }
+
+
 
 
 /**

@@ -35,6 +35,16 @@ a {
   }
 }
 
+footer, header {
+  min-height: 30px;
+  padding: 1em;
+}
+
+main {
+  @extend .container;
+  flex: 1;
+}
+
 
 section {
   margin: 2rem auto;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Header = (props) => {
     return(
-        <div>{props.children}</div>
+        <header>{props.children}</header>
     );
 }
 

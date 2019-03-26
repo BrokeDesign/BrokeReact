@@ -10,9 +10,12 @@
     "compile:sass": "node-sass src/styles/scss/styles.scss src/styles/css/styles.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
     "dev": "webpack-dev-server --mode development --open --hot",
-    "start": "concurrently --kill-others \"npm run watch:sass\" \"npm run dev\"",
+    "prod": "webpack --mode production",
     "prepublishOnly": "babel ./src --out-dir ./dist -s inline --copy-files",
-    "build": "webpack --mode production"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "start": "concurrently --kill-others \"npm run watch:sass\" \"npm run dev\" \"npm run storybook\"",
+    "build": "concurrently --kill others \"npm run prod\" \"npm run build-storybook\""
   },
   "files": [
     "dist/*"
@@ -41,6 +44,22 @@
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-a11y": "^5.0.5",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-backgrounds": "^5.0.5",
+    "@storybook/addon-centered": "^5.0.5",
+    "@storybook/addon-events": "^5.0.5",
+    "@storybook/addon-info": "^5.0.5",
+    "@storybook/addon-jest": "^5.0.5",
+    "@storybook/addon-knobs": "^5.0.5",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addon-notes": "^5.0.5",
+    "@storybook/addon-options": "^5.0.5",
+    "@storybook/addon-storyshots": "^5.0.5",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/client-logger": "^5.0.5",
+    "@storybook/react": "^5.0.5",
+    "@storybook/theming": "^5.0.5",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.1",
@@ -70,5 +89,9 @@
   "peerDependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
+  },
+  "dependencies": {
+    "jest": "^24.5.0",
+    "jest-resolve": "^24.5.0"
   }
 }
