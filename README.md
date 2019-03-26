@@ -22,7 +22,7 @@
 <br />
 <p align="center">
   <a href="https://brokeds.netlify.com">
-    <img src="src/assets/images/logo.svg" alt="Logo">
+    <img src="./src/assets/images/logo.svg" alt="Logo">
   </a>
 
   <h3 align="center">Broke Design System</h3>
