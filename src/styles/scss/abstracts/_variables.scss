@@ -10,11 +10,38 @@ $CONSTANTS: () !global;
 
 //Color
 $color-types: (
-  	alpha : hsl(198, 100%, 13%),
-  	beta  : hsl(197, 40%, 39%),
-  	gamma	: hsl(165, 95%, 48%),
-  	psi  	: hsl(5, 88%, 61%),
-	  omega	: hsl(350, 78%, 42%),
+  	alpha : (
+      base: hsl(198, 100%, 13%),
+      light: hsl(198, 100%, 25%),
+      dark: hsl(198, 100%, 1%),
+    ),
+  	beta  : (
+      base: hsl(197, 40%, 39%),
+      light: hsl(197, 40%, 51%),
+      dark: hsl(197, 40%, 27%),  
+    ),
+  	gamma	: (
+      base: hsl(165, 95%, 48%),
+      light: hsl(165, 95%, 60%),
+      dark: hsl(165, 95%, 36%),
+    ),
+    psi : (
+      base: hsl(5, 88%, 61%),
+      light: hsl(5, 88%, 73%),
+      dark: hsl(5, 88%, 49%),
+    ),
+    omega	: (
+      base: hsl(350, 78%, 42%),
+      light: hsl(350, 78%, 60%),
+      dark: hsl(350, 78%, 30%),
+    ),
+    greyscale: (
+      base: greyscale(50%),
+      light: greyscale(0%),
+      dark: greyscale(100%),
+    ),
+    white: white,
+    black: black,
 ) !default;
 
 // Grid column base count

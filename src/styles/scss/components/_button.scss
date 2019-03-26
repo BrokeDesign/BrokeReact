@@ -2,22 +2,19 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-%button {
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 0.15em;
-    border: 1px solid;
+
+.btn {
+    display: inline-block;
+    min-width: 5em;
+    text-align: center;
+    margin: .5em;
+    padding: .5em;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+    @include modifiers($color-types, 'background-color', $separator: ':');
 }
 
-@mixin button($color) {
-    @extend %button;
-    color: contrast($color);
-    background: lighten($color, 38%);
-    border-color: lighten($color, 20%);
-}
-
-@each $type, $color in $color-types {
-    .button-#{$type} {
-        @include button($color);
-    }
+.text {
+    @include modifiers($color-types, 'color')
 }

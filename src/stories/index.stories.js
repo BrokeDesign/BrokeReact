@@ -8,7 +8,7 @@ import Container from './Container';
 import InfoButton from './InfoButton';
 
 
-storiesOf('Button', module)
+storiesOf('storyButton', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>, {
     options: { selectedPanel: 'storybook/actions/panel' },
   })

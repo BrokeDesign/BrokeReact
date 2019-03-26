@@ -646,36 +646,115 @@ div[class^="col-"] {
 .col-offset-12 {
   margin-left: 100% !important; }
 
-.button-alpha, .button-beta, .button-gamma, .button-psi, .button-omega {
-  padding: 0.5em;
-  margin: 0.5em;
-  border-radius: 0.15em;
-  border: 1px solid; }
+.btn {
+  display: inline-block;
+  min-width: 5em;
+  text-align: center;
+  margin: .5em;
+  padding: .5em;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer; }
+  .btn-alpha {
+    background-color: #002e42; }
+  .btn-alpha:light {
+    background-color: #005980; }
+  .btn-alpha:dark {
+    background-color: #000405; }
+  .btn-beta {
+    background-color: #3c758b; }
+  .btn-beta:light {
+    background-color: #5098b4; }
+  .btn-beta:dark {
+    background-color: #295160; }
+  .btn-gamma {
+    background-color: #06efb5; }
+  .btn-gamma:light {
+    background-color: #38fac9; }
+  .btn-gamma:dark {
+    background-color: #05b387; }
+  .btn-psi {
+    background-color: #f35344; }
+  .btn-psi:light {
+    background-color: #f7887e; }
+  .btn-psi:dark {
+    background-color: #eb210f; }
+  .btn-omega {
+    background-color: #bf1833; }
+  .btn-omega:light {
+    background-color: #e94964; }
+  .btn-omega:dark {
+    background-color: #881125; }
+  .btn-greyscale {
+    background-color: greyscale(50%); }
+  .btn-greyscale:light {
+    background-color: greyscale(0%); }
+  .btn-greyscale:dark {
+    background-color: greyscale(100%); }
+  .btn-white {
+    background-color: white; }
+  .btn-black {
+    background-color: black; }
 
-.button-alpha {
-  color: contrast(#002e42);
-  background: #05b4ff;
-  border-color: #0076a8; }
+.text-alpha {
+  color: #002e42; }
 
-.button-beta {
-  color: contrast(#3c758b);
-  background: #adcfdc;
-  border-color: #6da9c0; }
+.text-alpha-light {
+  color: #005980; }
 
-.button-gamma {
-  color: contrast(#06efb5);
-  background: #b9fdec;
-  border-color: #60fbd4; }
+.text-alpha-dark {
+  color: #000405; }
 
-.button-psi {
-  color: contrast(#f35344);
-  background: #fffbfa;
-  border-color: #f9aba4; }
+.text-beta {
+  color: #3c758b; }
 
-.button-omega {
-  color: contrast(#bf1833);
-  background: #f4a4b1;
-  border-color: #ea536c; }
+.text-beta-light {
+  color: #5098b4; }
+
+.text-beta-dark {
+  color: #295160; }
+
+.text-gamma {
+  color: #06efb5; }
+
+.text-gamma-light {
+  color: #38fac9; }
+
+.text-gamma-dark {
+  color: #05b387; }
+
+.text-psi {
+  color: #f35344; }
+
+.text-psi-light {
+  color: #f7887e; }
+
+.text-psi-dark {
+  color: #eb210f; }
+
+.text-omega {
+  color: #bf1833; }
+
+.text-omega-light {
+  color: #e94964; }
+
+.text-omega-dark {
+  color: #881125; }
+
+.text-greyscale {
+  color: greyscale(50%); }
+
+.text-greyscale-light {
+  color: greyscale(0%); }
+
+.text-greyscale-dark {
+  color: greyscale(100%); }
+
+.text-white {
+  color: white; }
+
+.text-black {
+  color: black; }
 
 .card-container {
   max-width: calc(100% - 5em);

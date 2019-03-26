@@ -16,3 +16,6 @@ export { default as Header } from './lib/layout/Header';
 export { default as Footer } from './lib/layout/Footer';
 export { default as Main } from './lib/layout/Main';
 export { default as Container } from './lib/layout/Container';
+
+// Button Components 
+export { default as Button } from './lib/button/Button';
