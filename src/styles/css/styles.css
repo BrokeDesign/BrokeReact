@@ -654,13 +654,16 @@ div[class^="col-"] {
   padding: .5em;
   border-radius: 5px;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-  cursor: pointer; }
+  cursor: pointer;
+  color: #002b3d; }
   .btn-alpha {
     background-color: #002e42; }
   .btn-alpha:light {
     background-color: #005980; }
   .btn-alpha:dark {
     background-color: #000405; }
+  .btn-alpha-contrast {
+    background-color: #6aa991; }
   .btn-beta {
     background-color: #3c758b; }
   .btn-beta:light {
@@ -704,6 +707,9 @@ div[class^="col-"] {
 
 .text-alpha-dark {
   color: #000405; }
+
+.text-alpha-contrast {
+  color: #6aa991; }
 
 .text-beta {
   color: #3c758b; }
