@@ -153,11 +153,11 @@ const ExampleComponent = () => {
         <h2>Card Header</h2>
       </CardHead>
       <CardContent>
-      Here is content
+        Here is content
       </CardContent>
-      <CardFooter>
+      <CardFoot>
         <p>Card Footer</p>
-      </CardFooter>
+      </CardFoot>
     </Card>
   );
 }
