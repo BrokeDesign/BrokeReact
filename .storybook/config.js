@@ -17,7 +17,7 @@ addParameters({
     hierarchyRootSeparator: /\|/,
     enableShortcuts: true,
     theme: create({
-      base: 'dark',
+      base: 'light',
       brandTitle: 'CRA Kitchen Sink',
       brandUrl: 'https://github.com/storybooks/storybook/tree/master/examples/cra-kitchen-sink',
       gridCellSize: 12,

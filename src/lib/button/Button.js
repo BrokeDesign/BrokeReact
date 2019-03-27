@@ -16,7 +16,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
     bgColor: "alpha",
-    textColor: "white",
+    textColor: "alpha-contrast",
 }
 
 export default Button;
