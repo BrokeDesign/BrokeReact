@@ -8,6 +8,7 @@ import InfoButton from './InfoButton'
 import {Grid, Col, Row} from '../'; 
 
 storiesOf('Grid', module)
+
     .add('One Row, Many Columns',
         withInfo( "use Broke React Grid for simplified flexbox based grid system") ( context => 
         <div className="container">
@@ -76,4 +77,5 @@ storiesOf('Grid', module)
             </Row>
         </Grid>
         </div>
-        ));
+    )
+);
