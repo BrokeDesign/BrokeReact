@@ -38,8 +38,7 @@
     <a href="https://github.com/BrokeDesign/BrokeReact/issues">Report Bug</a>
     ·
     <a href="https://github.com/BrokeDesign/BrokeReact/issues">Request Feature</a>
-    ·
-    <a href="https://discord.gg/4aFTxzG">Join Discord Server</a>
+
   
   </p>
 </p>
