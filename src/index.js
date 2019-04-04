@@ -19,3 +19,7 @@ export { default as Container } from './lib/layout/Container';
 
 // Button Components 
 export { default as Button } from './lib/button/Button';
+
+
+// Navbar Components
+export {default as NavBar} from './lib/nav/NavBar';
