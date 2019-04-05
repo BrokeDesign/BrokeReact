@@ -6,8 +6,8 @@ import { Grid, Row, Nav } from '../../';
 
 
 const NavBar = (props) => {
-    isNavItem = props.isNavItem;
-
+    isMultiRow = props.isMultiRow;
+    
 	return (
 		// TODO: create sass map for nav with classes: navbar, nav, navfoot, nav-position-(top|side|side-right)
 		// TODO: create scss mixin for nav map
@@ -39,12 +39,14 @@ NavBar.propTypes = {
 	 * row and columns with what you want or you can simply use the Nav components.
 	 * TODO: Create remaining Nav Components
 	 */
-	children: PropTypes.any,
+    children: PropTypes.any,
+    isDefaultRow: PropTypes.bool,
 };
 
 NavBar.defaultProps = {
 	orient: 'top',
-	children: '',
+    children: '',
+    isDefaultRow: true,
 };
 
 export default NavBar;
