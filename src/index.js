@@ -23,3 +23,6 @@ export { default as Button } from './lib/button/Button';
 
 // Navbar Components
 export {default as NavBar} from './lib/nav/NavBar';
+export {default as Nav} from './lib/nav/Nav';
+export {default as NavItem} from './lib/nav/NavItem';
+export {default as NavFoot} from './lib/nav/NavFoot';
