@@ -6,19 +6,21 @@ import { Row } from '../../'
 
 const Nav = (props) => {
     return (
-        <Row className='nav'>
+        <div className={`nav nav-${props.bgColor}`}>
             {props.children}
-        </Row>
-    )    
+        </div>
+    )
 }
 
 
 Nav.propTypes = {
     children: PropTypes.any,
+    bgColor: PropTypes.string,
 }
 
 Nav.defaultProps = {
     children: '',
+    bgColor: 'alpha',
 }
 
 export default Nav;

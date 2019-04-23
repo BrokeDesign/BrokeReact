@@ -762,6 +762,53 @@ div[class^="col-"] {
 .text-black {
   color: black; }
 
+.nav {
+  display: flex;
+  width: 100vw;
+  padding: 1em; }
+  .nav-alpha {
+    background-color: #002e42; }
+  .nav-alpha:light {
+    background-color: #005980; }
+  .nav-alpha:dark {
+    background-color: #000405; }
+  .nav-alpha-contrast {
+    background-color: #6aa991; }
+  .nav-beta {
+    background-color: #3c758b; }
+  .nav-beta:light {
+    background-color: #5098b4; }
+  .nav-beta:dark {
+    background-color: #295160; }
+  .nav-gamma {
+    background-color: #06efb5; }
+  .nav-gamma:light {
+    background-color: #38fac9; }
+  .nav-gamma:dark {
+    background-color: #05b387; }
+  .nav-psi {
+    background-color: #f35344; }
+  .nav-psi:light {
+    background-color: #f7887e; }
+  .nav-psi:dark {
+    background-color: #eb210f; }
+  .nav-omega {
+    background-color: #bf1833; }
+  .nav-omega:light {
+    background-color: #e94964; }
+  .nav-omega:dark {
+    background-color: #881125; }
+  .nav-greyscale {
+    background-color: greyscale(50%); }
+  .nav-greyscale:light {
+    background-color: greyscale(0%); }
+  .nav-greyscale:dark {
+    background-color: greyscale(100%); }
+  .nav-white {
+    background-color: white; }
+  .nav-black {
+    background-color: black; }
+
 .card-container {
   max-width: calc(100% - 5em);
   margin: 2em auto; }

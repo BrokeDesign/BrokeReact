@@ -1,3 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the navbar component.
 // -----------------------------------------------------------------------------
+
+// TODO: SASS MIXINS BABY! Seriously, a lot of the nav stuff should be simplified into mixins...
+.nav {
+    display: flex;
+    width: 100vw;
+    padding: 1em;
+    @include modifiers($color-types, 'background-color', $separator: ':');
+}
